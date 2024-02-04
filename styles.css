@@ -39,43 +39,56 @@ header .menu{
     gap: 20px;
     font-weight: 500;
 }
+
+
+
+main h1 {
+    font-size: 3em;
+    margin-top: 10px;
+    display: flex;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    color: #0D314E;
+}
+
+main h2,
+main .curiosities h2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Garamond";
+    font-style: italic;
+    font-size: 35px;
+    color: #CC5216;
+}
+
+main p,
+main .curiosities p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Garamond";
+    font-size: 25px;
+    line-height: 1.5;
+    color: #eee;
+    margin: 0 20px;
+}
+
+
 /* css slider */
 
 
-main .slider .container
+
+.slider
 {
     height: 100vh;
     margin-top: -50px;
     position: relative;
 }
-
-main .container {
-    /* Add or adjust styles for the container */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-main .container h1 {
-    /* Add or adjust styles for the h1 element */
-    font-size: 3em; /* Adjust the font size as needed */
-    margin-bottom: 10px;
-}
-
-main .container h2 {
-    /* Add or adjust styles for the h2 element */
-    font-size: 2em; /* Adjust the font size as needed */
-    margin-bottom: 8px;
-}
-
-main .container p {
-    /* Add or adjust styles for the p element */
-    font-size: 1.2em; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-}
-
 
 .slider .list .item{
     position: absolute;
@@ -115,6 +128,7 @@ main .container p {
     text-transform: uppercase;
     letter-spacing: 10px;
 }
+
 .slider .list .item .content h3{
     font-size: 100px;
     margin: 0;
