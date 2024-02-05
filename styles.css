@@ -42,11 +42,11 @@ header .menu{
 
 .teclas {
     border-radius: 10px;
-    border: double #0D314E;
+    border: double #c6c6c6;
     font-family:"Garamond";
     font-size: 20px;
     margin: 30px auto;
-    padding:  2% 2%;
+    padding: 2% 2%;
     z-index: 1;
 }
 
@@ -84,11 +84,11 @@ main .curiosities p {
 
 .curiosities {
     border-radius: 10px;
-    border: double #0D314E;
+    border: double #c6c6c6;
     font-family:"Garamond";
     font-size: 20px;
-    margin: 30px auto;
-    padding:  2% 2%;
+    margin: 15px auto;
+    padding: 0 2%;
     z-index: 1;
 }
 
@@ -135,7 +135,7 @@ main .curiosities h2
     left: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to top, #000 40%, transparent
+        to top, #000 20%, transparent
     );
 }
 
@@ -259,7 +259,7 @@ footer {
     bottom: 0;
     right: 0;
     padding-bottom: 20px;
-    background-color: #0D314E;
+    background-color: #000;
     color: #D9E2F7;
 }
 
@@ -312,3 +312,15 @@ section.bottom {
     font-size: 13px;
 }
 
+@media (width > 480px) {
+    section.logo1 ul {
+        padding-right: 10%;
+    }
+}
+
+@media (width > 600px) {
+    section.logo1 ul {
+        grid-template-columns: repeat(4, 1fr);
+        padding-right: 0;
+    }
+}
