@@ -7,8 +7,8 @@
 body{
     font-family: "Poppins", sans-serif;
     margin: 0;
-    background-color: #010101;
-    color: #eee;
+    background-color: #0D314E;
+    color: #D9E2F7;
 }
 svg{
     width: 25px;
@@ -40,9 +40,18 @@ header .menu{
     font-weight: 500;
 }
 
+.teclas {
+    border-radius: 10px;
+    border: double #0D314E;
+    font-family:"Garamond";
+    font-size: 20px;
+    margin: 30px auto;
+    padding:  2% 2%;
+    z-index: 1;
+}
 
 
-main h1 {
+main .teclas h1 {
     font-size: 3em;
     margin-top: 10px;
     display: flex;
@@ -54,7 +63,35 @@ main h1 {
     color: #0D314E;
 }
 
-main h2,
+main h2 {
+    font-family: "Garamond";
+    font-style: italic;
+    color: #CC5216;
+    font-size: 30px; 
+}
+
+main .teclas p,
+main .curiosities p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Garamond";
+    font-size: 25px;
+    line-height: 1.5;
+    color: #eee;
+    margin: 30px 20px;
+}
+
+.curiosities {
+    border-radius: 10px;
+    border: double #0D314E;
+    font-family:"Garamond";
+    font-size: 20px;
+    margin: 30px auto;
+    padding:  2% 2%;
+    z-index: 1;
+}
+
 main .curiosities h2
 {
     display: flex;
@@ -66,23 +103,9 @@ main .curiosities h2
     color: #CC5216;
 }
 
-main p,
-main .curiosities p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Garamond";
-    font-size: 25px;
-    line-height: 1.5;
-    color: #eee;
-    margin: 0 20px;
-}
 
 
 /* css slider */
-
-
-
 .slider
 {
     height: 100vh;
@@ -130,7 +153,7 @@ main .curiosities p {
 }
 
 .slider .list .item .content h3{
-    font-size: 100px;
+    font-size: 75px;
     margin: 0;
 }
 .slider .list .item.active{
@@ -145,6 +168,7 @@ main .curiosities p {
     }
 }
 .slider .list .item.active p:nth-child(1),
+main h2,
 .slider .list .item.active h3,
 .slider .list .item.active p:nth-child(3){
     transform: translateY(30px);
@@ -152,6 +176,7 @@ main .curiosities p {
     opacity: 0;
     animation: showContent .5s .7s ease-in-out 1 forwards;
 }
+main h2,
 .slider .list .item.active h3{
     animation-delay: 1s;
 }
@@ -219,6 +244,7 @@ main .curiosities p {
     .thumbnail{
         justify-content: start;
     }
+    main h2,
     .slider .list .item .content h3{
         font-size: 60px;
     }
@@ -226,3 +252,63 @@ main .curiosities p {
         top: 10%;
     }
 }
+
+footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 20px;
+    background-color: #0D314E;
+    color: #D9E2F7;
+}
+
+section .logo1 {
+    padding-top: 30px;
+    margin-bottom: 48px;
+}
+
+section.logo1 h2 {
+    display: block;
+    height: 30px;
+    margin: 30px 30px;
+    font-weight: bold;
+    font-family: 'riesling', sans-serif;
+    font-size: 2.5em;
+}
+
+section.logo1 ul {
+    list-style: none;
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+section.logo1 ul li a {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(255 255 255/ 90%);
+    text-decoration: none;
+}
+
+section.logo1 h3 {
+    color: rgb(255 255 255/ 40%);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+section.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 2px solid rgb(255 255 255/ 10%);
+    color: rgb(255 255 255/ 40%);
+    font-size: 13px;
+}
+
